@@ -1,0 +1,15 @@
+{
+    "name": "raphael/php",
+    "autoload": {
+        "psr-4": {
+            "Raphael\\Php\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chalum0",
+            "email": "raphaelzanatta24@proton.me"
+        }
+    ],
+    "require": {}
+}
