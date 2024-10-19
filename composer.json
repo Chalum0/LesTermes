@@ -1,0 +1,17 @@
+{
+    "name": "root/lestermes.fr",
+    "autoload": {
+        "psr-4": {
+            "Root\\LestermesFr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chalum0",
+            "email": "raphaelzanatta24@proton.me"
+        }
+    ],
+    "require": {
+        "mustache/mustache": "^2.14"
+    }
+}
