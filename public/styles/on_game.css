@@ -1,0 +1,193 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    background-color: #202131;
+    overflow: hidden;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+}
+
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-between;
+}
+
+nav li{
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    width: 25%;
+    color: #393c4d;
+    text-align: center;
+}
+nav li:hover{
+    transition: none;
+    transform: none;
+}
+
+
+
+#gameBoard{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+#left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#questionCard{
+    background-color: darkgrey;
+    width: 12vw;
+    height: 17.14vw;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#answerCard{
+    width: 12vw;
+    height: 17.14vw;
+    border-radius: 20px;
+    border: 5px solid #393c4d;
+    color: #393c4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answerCard>p{
+    font-size: 150px;
+}
+
+
+
+
+
+
+
+
+#deck{
+    height: 19.5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    height: 200%;
+    width: 16.6%;
+    background-color: darkgrey;
+    border-radius: 20px 20px 0 0;
+    border: 2px solid black;
+    transition: .25s;
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+li:hover{
+    transform: translateY(-20px) scale(1.05);
+    transition: .25s;
+}
+
+.cardContent{
+    width: 80%;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+#answers_board{
+    width: 99.5%;
+    height: 99vh;
+}
+
+#answers_board>:first-child{
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
+    grid-gap: 1vw;
+    justify-content: center;
+}
+
+.revealedCard {
+    background-color: darkgrey;
+    width: 12vw;
+    height: 17.14vw;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color: black;
+}
