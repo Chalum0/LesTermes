@@ -1,3 +1,3 @@
 <?php
 
-echo "bonsoir";
+require("../src/router.php");
